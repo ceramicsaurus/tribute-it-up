@@ -1,6 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    color:#98eef9;
+    box-sizing: inherit;
+}
+
 body {
     background: rgb(0,212,255);
-background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,104,121,1) 35%, rgba(4,55,81,1) 100%);
+    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,104,121,1) 35%, rgba(4,55,81,1) 100%);
 }
 
 head, body {
@@ -8,7 +17,14 @@ head, body {
 }
 
 #smalltext {
-    font-size: 10px;
+    font-size: 13px;
+}
+
+#title {
+    margin: auto;
+    width: 50%;
+    font-size: 40px;
+    text-align:center
 }
 
 .columns {
@@ -66,4 +82,22 @@ head, body {
   /* Show the tooltip text when you mouse over the tooltip container */
   .tooltip:hover .tooltiptext {
     visibility: visible;
+  }
+
+  .textywexty {
+    background:rgba(9,104,121,1);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: 800px){
+    #title {
+        font-size: 60px
+    }
+
+    #smalltext {
+        font-size: 30px;
+    }
   }
