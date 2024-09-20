@@ -1,68 +1,78 @@
 html {
     box-sizing: border-box;
-}
-
-*, *::before, *::after {
+ }
+ 
+ 
+ *, *::before, *::after {
     color:#98eef9;
     box-sizing: inherit;
-}
-
-body {
+ }
+ 
+ 
+ body {
     background: rgb(0,212,255);
     background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,104,121,1) 35%, rgba(4,55,81,1) 100%);
-}
-
-head, body {
+ }
+ 
+ 
+ head, body {
     margin-left: 25px;
-}
-
-#smalltext {
+ }
+ 
+ 
+ #smalltext {
     font-size: 13px;
-}
-
-#title {
+ }
+ 
+ 
+ #title {
     margin: auto;
     width: 50%;
     font-size: 40px;
     text-align:center
-}
-
-.columns {
+ }
+ 
+ 
+ .columns {
     display: flex; /* Use flexbox to align columns side by side */
     height: 100vh; /* Full height of the viewport */
     width: auto;
-}
-
-.left {
+ }
+ 
+ 
+ .left {
     flex: 1 1 auto;
-}
-
-.right {
+ }
+ 
+ 
+ .right {
     flex: 1 1 auto;
-}
-
-.header{
+ }
+ 
+ 
+ .header{
     font-size:larger
-}
-
-.cast, .team {
+ }
+ 
+ 
+ .cast, .team, .girls, .boys {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 16px;
     max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 10px;
-}
-
-/* Tooltip container */
-.tooltip {
+    margin-right: 16px;
+    margin-left: 16px;
+ }
+ 
+ 
+ /* Tooltip container */
+ .tooltip {
     position: relative;
     display: inline-block;
   }
-  
-  /* Tooltip text */
+   /* Tooltip text */
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -71,33 +81,37 @@ head, body {
     opacity: 55%;
     text-align: center;
     padding: 5px 0;
-   
+  
     /* Position the tooltip text - see examples below! */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 35%;
   }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
+   /* Show the tooltip text when you mouse over the tooltip container */
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
-
+ 
+ 
   .textywexty {
     background:rgba(9,104,121,1);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 2px;
     padding-bottom: 5px;
+    margin: 20px;
   }
-
+ 
+ 
   @media (min-width: 800px){
     #title {
         font-size: 60px
     }
-
+ 
+ 
     #smalltext {
-        font-size: 30px;
+        font-size: 25px;
     }
   }
+ 
